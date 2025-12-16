@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: white;
+}
+
+:root{
+    --low-opacity-txt:rgba(255, 255, 255, 0.745);
+    --background-color: black;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    height: 2rem;
+    width: 148px;
+}
+nav{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding: .50rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block1{
+    position: relative;
+    text-align: center;
+    background-image: url("main.png");
+    background-position: center center; /* bg image will remain in center                                               */
+    background-repeat: no-repeat;
+    background-size: max(1400px, 100vw); /* which ever value is bigger between 1200px AND 100vw will get applied  */
+    height: 50rem;
+    width: 100%;
+    color: white;
+}
+
+.block1 .backgroundblock{
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    background:radial-gradient(rgb(0, 0, 0),black); /* Radial Gradient */
+    opacity: 70%;
+}
+
+.block1 .mainblock{
+    position: relative;
+    align-content: center;
+    margin: 6rem auto 0 auto; 
+    width: 80vw;
+    height: 31rem;
+}
+
+.mainheading{
+    margin: auto;
+    width: 50%;   
+}
+
+.mainheading h1{
+    font-weight: 1000;
+    font-size: 3rem;
+    line-height: 70px;
+    margin: 0px 0px 15px; /* margin-bottom */
+}
+
+.mainheading h2{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0px 0px 30px; /* margin-bottom */
+}
+
+.lastHeading{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0px 0px 10px;
+}
+
+.block1 .CTA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 0px; /* topmargin :10px */
+}
+
+.block1 .btn{
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 5px;
+    height: 50px;
+    border: none;
+    margin: 0;
+    padding: 10px;
+    font-weight: bolder;
+    color: white;
+}
+
+.block1 .top-buttons{
+    display: inline-flex;
+    align-items: center
+}
+
+select {
+    outline: none;
+}
+
+.CTA input{
+    margin-right: 10px;
+    width: 300px;
+    height: 30px;
+    padding: 10px;;
+    border-radius: 5px;
+    background-color: rgba(18, 18, 18, 0.575);
+    border: 1px solid rgba(255, 255, 255, 0.495);
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.CTA input::placeholder{ /* How to target [placeholder]  inside [input]  */
+    color: var(--low-opacity-txt);
+}
+
+.block1 .get-started{
+    background-color: red;
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+}
+
+.block1 .sign-in{
+    background-color: red;
+    height: 15px;
+    width: 80px;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.block1 .lang-btn{
+    border: 1px solid rgba(255, 255, 255, 0.607);
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.286);
+}
+
+select{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+select option{ /* Trageting <option> inside <select> DROPDOWN tag */
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+
+ .line{
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    width: 100%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    box-shadow: 10px -10px 50px 30px black ;
+    background: linear-gradient(to right, rgba(149, 2, 68, 0.408) 16%, rgb(230, 0, 0), rgb(255, 0, 13), rgb(255, 0, 115), rgba(210, 0, 95, 0.408) 84%);
+}
+
+.block2 {
+    height: 30rem;
+    width: 80vw;
+    margin: 50px auto;
+    background-color:var(--background-color);
+}
+
+.block2 *{
+    margin-bottom: 20px;
+}
+
+.block2 .mega-banner{
+    position: relative;
+    width: 80%;
+    display: 
+    flex;
+    margin: 0px auto 10px;
+    gap: 40px;
+    justify-content: center;
+}
+
+.block2 .mega-banner img{
+    border-radius: 10px;
+}
+
+.block2 .banner{
+    position: relative;
+}
+.block2 .banner-txt{
+    position: absolute;
+    font-size: 100px;
+    color: black;
+    -webkit-text-stroke: 1px white; /* Applying Stroke in text AKA border */
+    font-weight: 1000;
+    text-shadow: 0px 0px 30px black;
+    bottom: 10%;
+    left: -10%;
+}
+
+.block2 .capsule{
+    background-color: rgb(14, 14, 14);
+    padding: 10px 20px;
+    border: 1px solid rgb(46, 46, 46);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 10;
+}
+
+.block2 select option{
+    color: white;
+}
+
+.block2 .capsule1{
+    margin-right:10px;
+}
+
+.block3 {
+    height: 25rem;
+    width: 80vw;
+    margin: 50px auto;
+    background-color:var(--background-color);
+}
+
+.block3 h1{
+    margin-bottom: 20px;
+}
+
+.block3 .container *{
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.block3 .container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 15px;
+}
+
+.block3 .container .box{
+    position: relative;
+    align-items: center;
+    height: 230px;
+    width: 400px;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 20px ;
+    background: linear-gradient(160deg, #0400ff2b, rgba(116, 0, 81, 0.236)); /* Applying linear gradient background color */
+}
+
+.block3 .box p{
+    color: rgba(255, 255, 255, 0.684);
+}
+
+.block3 .box .img-bottom{
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    width: 72px;
+    margin: 0;
+}
+
+.block4{
+    position: relative;
+    height: 38rem;
+    width: 80%;
+    margin: 50px auto;
+    background-color:var(--background-color);
+}
+
+.block4 .box{
+    display: flex;
+    width: 90%;
+    background-color: rgb(54, 54, 54);
+    height: 50px;
+    padding: 15px 15px;
+    justify-content: space-between;
+    align-items: center;
+    
+    &:hover{
+        background-color:rgb(103, 103, 103) ;
+    }
+}
+
+
+.block4 *{
+    margin: 10px;
+}
+
+.block4 h2{
+    font-weight: 400;
+}
+
+.block4 .box img{
+    height: 36px;
+}
+
+.CTA2{
+    height: 100px;
+    margin: 0px auto 0px;
+    background-color: var(--background-color);
+}
+
+.CTA2 .CTA-btn{
+    position: relative;
+    z-index: auto;
+    height: 50px;
+    width: auto;
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.CTA-btn input{
+    margin-right: 10px;
+    width: 300px;
+    height: 30px;
+    padding: 10px;;
+    border-radius: 5px;
+    background-color: rgba(18, 18, 18, 0.575);
+    border: 1px solid rgba(255, 255, 255, 0.495);
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.CTA-btn input::placeholder{ /* How to target [placeholder]  inside [input]  */
+    color: var(--low-opacity-txt);
+}
+
+.CTA2 .get-started{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+}
+
+.CTA2 .btn{
+    background-color: red;
+    text-align: center;
+    border-radius: 5px;
+    height: 50px;
+    border: none;
+    margin: 0;
+    padding: 10px;
+    font-weight: bolder;
+    color: white;
+}
+
+footer{
+    bottom: 10%;
+    height: 30rem;
+    width: 80vw;
+    margin: 50px auto 0px ;
+    background-color:var(--background-color);
+}
+
+footer .box1{
+    color: var(--low-opacity-txt);
+}
+
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+    height: auto; /* means adjust the heigh according to the items inside this element */
+    margin: 20px auto;
+}
+
+footer ul li{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: var(--low-opacity-txt);
+    border: 1px black solid;
+    height: 30px;
+    width: 33.1%;
+}
+
+footer .box2 li a:hover{
+    color:red;
+}
+
+footer .box3 .btn{
+    background-color: transparent;
+    text-align: center;
+    border-radius: 5px;
+    height: 100px;
+    border: none;
+    margin: 20px 0px;
+    padding: 10px;
+    color: white;
+} 
+
+footer .box3 .lang-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--low-opacity-txt);
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.286);
+}
+
+footer .box4, a{
+    color: var(--low-opacity-txt);
+}
+
+section{
+    position: relative;
+    z-index: auto;
+}
