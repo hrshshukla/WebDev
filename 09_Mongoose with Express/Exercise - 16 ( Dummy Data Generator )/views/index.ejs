@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+<body>
+
+    <div class="p-4 flex justify-center">
+        <button class="button bg-green-600 rounded-2xl p-2 hover:bg-green-500 transition-colors" >
+            Generate Now
+        </button>
+    </div>
+
+    <script>
+        let button = document.querySelector(".button")
+        
+        button.addEventListener('click', async ()=>{
+           let result = await fetch('/generate')
+           console.log(result);
+        })
+        
+    </script>
+</body>
+</html>
